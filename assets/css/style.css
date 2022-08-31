@@ -9,57 +9,70 @@ body {
     background-color: #d9dcd6;
 }
  
-/* Header/NavBar */
+/* Base (Header/NavBar CSS) */
+
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
     background-color: #2a607c;
     color: #ffffff;
 }
- 
-.header h1 {
+
+    .header h1 {
     display: inline-block;
     font-size: 48px;
 }
- 
-.header h1 .seo {
+/*Controls the letters SEO in the navbar to change their color individually from the rest of the letters*/
+        .header h1 .seo {
     color: #d9dcd6;
 }
- 
-.header nav {
+            .header nav {
     padding-top: 10px;
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 25px;
 }
- 
-.header nav ul {
+                .header nav ul {
     list-style-type: none;
 }
- 
-.header nav ul li {
+                    .header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
- 
- 
-a {
+                            a {
     color: #ffffff;
     text-decoration: none;
 }
+
  
- 
-/* I resized the height of the Hero Class so I could scale the picture and see the top of it rather than cutting off the top of the person's head*/
-/*I then had to get rid of the top margin so there was no gap between the picture and the navbar/header */
+/* The hero class is signifying the image that seperates the nav bar and the main section of the webpage */
 .hero {
-    height: 1350px;
+    height: 900px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
 }
+
+/* These lines of CSS determine the header"SEO,ORM,SMM" size and the space between the header and the paragraph*/
+.search-engine-optimization h2 {
+    margin-bottom: 20px;
+    font-size: 48px;
+}
+ 
+.online-reputation-management h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+ 
+.social-media-marketing h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+/* Making sure the text on the main body text stays at the right spot*/
 .float-left {
     float: left;
     margin-right: 25px;
@@ -69,11 +82,55 @@ a {
     float: right;
     margin-left: 25px;
 }
- 
+ /* This is keeping everything on their respective boxes and looking neat*/
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 50px;
+}
+
+  /* This sets how the main bodies of text looks and where it is located on the webpage*/
+
+    .search-engine-optimization {
+        margin-bottom: 20px;
+        padding: 50px;
+        height: 300px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: #0072bb;
+        color: #ffffff;
+    }
+ 
+        .online-reputation-management {
+            margin-bottom: 20px;
+            padding: 50px;
+            height: 300px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: #0072bb;
+            color: #ffffff;
+    }   
+ 
+            .social-media-marketing {
+                margin-bottom: 20px;
+                padding: 50px;
+                height: 300px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                background-color: #0072bb;
+                color: #ffffff;
+     }
+
+/*Main Body Images*/
+/*Determines the size of the images for the main body of text */
+ 
+.search-engine-optimization img {
+    max-height: 200px;
+}
+ 
+.online-reputation-management img {
+    max-height: 200px;
+}
+ 
+.social-media-marketing img {
+    max-height: 200px;
 }
  
 /* Aside CSS */
@@ -87,7 +144,7 @@ a {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
- 
+  /* Changes text of sidebar to white and determines the seperation between the three*/
 .benefit-lead {
     margin-bottom: 32px;
     color: #ffffff;
@@ -103,6 +160,7 @@ a {
     color: #ffffff;
 }
  
+/* Keeps headers aligned to the center of the sidebar */
 .benefit-lead h3 {
     margin-bottom: 10px;
     text-align: center;
@@ -118,6 +176,7 @@ a {
     text-align: center;
 }
  
+/* Keeps the images in the sidebar centered with the display code, and keeps it a normal size so it doesn't overtake the page with the max-width command.*/
 .benefit-lead img {
     display: block;
     margin: 10px auto;
@@ -135,66 +194,7 @@ a {
     margin: 10px auto;
     max-width: 150px;
 }
- 
-main
-   /* This sets how the main bodies of text looks and where it is located on the webpage*/
- .search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
- 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
- 
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
- 
-/*Determines the size of the images for the main body of text */
- 
-.search-engine-optimization img {
-    max-height: 200px;
-}
- 
-.online-reputation-management img {
-    max-height: 200px;
-}
- 
-.social-media-marketing img {
-    max-height: 200px;
-}
-/* These lines of CSS determine the header"SEO,ORM,SMM" size and the space between the header and the paragraph*/
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 48px;
-}
- 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
- 
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
- 
- 
+ /* Determines the text at the bottom of the page */
 .footer {
     padding: 30px;
     clear: both;
