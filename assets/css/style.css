@@ -57,22 +57,12 @@ body {
     background-position: center;
 }
 
-/* These lines of CSS determine the header"SEO,ORM,SMM" size and the space between the header and the paragraph*/
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 48px;
-}
- 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
- 
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
+/* Replaced Seperate Header code with one singular line of code under body-headers to clean up the code*/
+.body-headers{margin-bottom: 20px;
+    font-size: 56px;}
+
 /* Making sure the text on the main body text stays at the right spot*/
+
 .float-left {
     float: left;
     margin-right: 25px;
@@ -91,11 +81,13 @@ body {
 
   /* This sets how the main bodies of text looks and where it is located on the webpage*/
 
+
     .search-engine-optimization {
         margin-bottom: 20px;
         padding: 50px;
         height: 300px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 25px;
         background-color: #0072bb;
         color: #ffffff;
     }
@@ -105,6 +97,7 @@ body {
             padding: 50px;
             height: 300px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 25px;
             background-color: #0072bb;
             color: #ffffff;
     }   
@@ -114,6 +107,7 @@ body {
                 padding: 50px;
                 height: 300px;
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 25px;
                 background-color: #0072bb;
                 color: #ffffff;
      }
@@ -142,6 +136,7 @@ body {
     width: 20%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
     background-color: #2589bd;
 }
   /* Changes text of sidebar to white and determines the seperation between the three*/
